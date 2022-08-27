@@ -1,0 +1,272 @@
+:root {
+  --BRAND_BLUE: #1f80e0;
+  --BRAND_RED: #f15151;
+  --BRAND_ORANGE: #db882a;
+  --BG_GRADIENT_L0: linear-gradient(to bottom, #141b29, #0c111b 300px);
+  --BG_GRADIENT_L1: linear-gradient(to bottom, #192133, #111826);
+  --BG_GRADIENT_L2: linear-gradient(to bottom, #334366, #334366, #1c2940);
+  --CARD_GRADIENT: #030b17;
+  --HEADER_COLOR: #121926;
+  --BG_COLOR_L0: #0c111b;
+  --BG_COLOR_L1: #192133;
+  --BG_COLOR_L2: #334366;
+  --BG_COLOR_L3: rgba(144, 153, 153, 0.1);
+  --BG_COLOR_L4: #1b1f20;
+  --BORDER_COLOR_L0: #2e3333;
+  --TEXT_COLOR_L0: #fff;
+  --TEXT_COLOR_L1: rgba(255, 255, 255, 0.8);
+  --TEXT_COLOR_L2: rgba(255, 255, 255, 0.6);
+  --TEXT_COLOR_L3: #dadada;
+  --TEXT_COLOR_L4: #909999;
+  --TEXT_COLOR_L5: #f9f9f9;
+  --TEXT_LINK_COLOR: #1f80e0;
+  --TEXT_BTN_COLOR: #1f80e0;
+}
+/* body style Start */
+body {
+  margin: 0;
+  background-color: var(--BG_COLOR_L0);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* body style End */
+/* navbar Style start */
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 0;
+  padding: 0 50px;
+  position: relative;
+}
+#navBar > div:first-child {
+  width: 45%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#navBar > div:nth-child(2) {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#navBar > div:first-child > :first-child {
+  width: 17px;
+  cursor: pointer;
+}
+#navBar h1 {
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#logoHOTSTAR {
+  margin-top: -10px;
+  cursor: pointer;
+}
+#secondDivNav > div {
+  display: flex;
+  margin: 0 20px;
+}
+#secondDivNav > button {
+  cursor: pointer;
+  background-color: var(--TEXT_LINK_COLOR);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 15px 5px 15px;
+  border-radius: 5px;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#secondDivNav > div:last-child {
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#secondDivNav > div:first-child {
+  padding: 3px 3px;
+}
+#serchIcon > img {
+  width: 13px;
+  position: absolute;
+  margin-left: -18px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+#secondDivNav input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-left: -5px;
+  background-color: var(--BG_COLOR_L0);
+  color: white;
+  border-bottom: 1px solid white;
+  position: relative;
+  cursor: pointer;
+}
+#secondDivNav input:focus {
+  width: 380px;
+  border-bottom: 1px solid skyblue;
+}
+#movie-container {
+  position: absolute;
+  width: 380px;
+  top: 55px;
+  height: auto;
+  right: 245px;
+  background-color: var(--BG_COLOR_L0);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid rgb(48, 47, 47);
+  border-radius: 3px;
+}
+#movie-container:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#movie-container img {
+  width: 156px;
+}
+#movie-container > div {
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+  width: 360px;
+  height: 89px;
+  background-color: var(--BG_COLOR_L1);
+  overflow: hidden;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#movie-container > div:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#movie-container h4 {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#movie-container h5 {
+  margin: 0;
+  font-weight: 500;
+}
+#movie-container > div > div {
+  margin-right: 15px;
+}
+#moreBTN {
+  width: 382px;
+  background-color: var(--BG_COLOR_L1);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  color: white;
+  padding: 5px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0 0 3px 3px;
+  border: 1px solid rgb(48, 47, 47);
+}
+#serchMovieList {
+  display: none;
+}
+/* navbar Style start */
+.resClass {
+  padding: 10px 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.resClass > div {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.resClass > div > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#slideshow {
+  padding: 30px 50px;
+}
+#slideshow > img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}
+#More-Page-Content {
+  display: none;
+  padding: 10px 50px;
+}
+#More-Page-Content-IMG {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+#More-Page-Content > h1 {
+  margin: 50px 0;
+}
+#More-Page-Content-IMG > div {
+  height: 132px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#More-Page-Content-IMG > div:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+#More-Page-Content-IMG img {
+  width: 100%;
+}
+#Movies-Information {
+  padding: 20px 50px;
+}
+#Movies-Information > div {
+  display: flex;
+  align-items: center;
+  border: 3px solid rgba(255, 255, 255, 0.37);
+  background-color: var(--BG_COLOR_L1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding-left: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotstar</title>
+
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <section id="navBarSection">
+      <nav id="navBar">
+        <div id="firstDivNav">
+          <img src="./IMG/threelines.png" alt="" />
+          <img
+            id="logoHOTSTAR"
+            src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+            alt=""
+          />
+          <h1>TV</h1>
+          <h1>Movies</h1>
+          <h1>Sports</h1>
+          <h1>Disney+</h1>
+          <img
+            src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg"
+            alt=""
+          />
+        </div>
+        <div id="secondDivNav">
+          <div>
+            <div>
+              <input
+                type="text"
+                placeholder="Search"
+                oninput="debounce(searchMovieitm,500)"
+                id="movieName"
+              />
+            </div>
+            <div id="serchIcon"><img src="./IMG/serchLogo.png" alt="" /></div>
+          </div>
+          <button>SUBSCRIBE</button>
+          <div>LOGIN</div>
+        </div>
+      </nav>
+    </section>
+    <section id="Main-Page-Content">
+      <section id="serchMovieList">
+        <div id="movie-container"></div>
+      </section>
+      <div id="slideshow"></div>
+      <h1 style="padding: 0 50px; font-size: 25px">Latest & Trending</h1>
+      <div class="resClass">
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/3850/1303850-h-4819004628f8"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6251/1296251-h-2aa2376db607"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/9947/1279947-h-d5d3ff34dad1"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/9315/1269315-h-f07af7b5de9b"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4126/1304126-h-21ec4aad5a1c"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/2325/1282325-h-940aaa26e948"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5630/1215630-h-102ee82c573a"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/2184/1302184-h-f4d2b00cfa25"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/7831/1297831-h-b2685a0e348f"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6836/1286836-h-52a8c29d1dcd"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6751/1286751-h-0a643d9b5a26"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/2444/1202444-h-5dbebac51294"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4562/1284562-h-f8799116ad5c"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4063/1274063-h-d2b9fd7d2398"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section id="More-Page-Content">
+      <h1>Showing all results <span id="NameSearchedFor"></span></h1>
+      <div id="More-Page-Content-IMG"></div>
+    </section>
+    <section id="Movies-Information"></section>
+    <p style="padding: 0 50px">
+      About Disney+ HotstarTerms Of UsePrivacy PolicyFAQFeedbackCareers © 2022
+      STAR. All Rights Reserved. HBO, Home Box Office and all related channel
+      and programming logos are service marks of, and all related programming
+      visuals and elements are the property of, Home Box Office, Inc. All rights
+      reserved.
+    </p>
+  </body>
+</html>
+<script src="./script/index.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+  integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
