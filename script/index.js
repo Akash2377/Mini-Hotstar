@@ -135,6 +135,7 @@ function showDataOfMovie(movieData) {
   div.innerHTML = data;
   document.getElementById("Movies-Information").append(div);
 }
+// Debouncing used for making minimum request
 let timeId;
 function debounce(func, delay) {
   if (timeId) {
